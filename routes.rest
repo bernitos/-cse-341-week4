@@ -1,0 +1,90 @@
+GET http://localhost:8080/contacts 
+###
+GET http://localhost:8080/contacts/63cbb002a8c8ee2727aa2c16
+###
+GET http://localhost:8080/contacts/63cbb0f9a8c8ee2727aa2c17
+###
+GET http://localhost:8080/contacts/63cbb1f0a8c8ee2727aa2c18
+
+// LOCALHOST
+### Get all contacts
+GET http://localhost:8080/contacts
+
+
+### Get contact by id
+GET http://localhost:8080/contacts/63f8d0193f6c6771fb5131b7
+
+
+### Create contact
+POST http://localhost:8080/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Geivai",
+    "lastName":"joie",
+    "email":"dgeivai@yahoo.fr",
+    "favoriteColor":"grey",
+    "birthday":"02/04/1990"
+}
+
+
+### PUT contact
+PUT http://localhost:8080/contacts/63f8d1973f6c6771fb5131b8 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Mouna",
+    "lastName":"Badelo",
+    "email":"badelo@gmail.com",
+    "favoriteColor":"orange",
+    "birthday":"04/11/1963"
+}
+### DELETE contact
+DELETE http://localhost:8080/contacts/63f8d3313f6c6771fb5131b9 HTTP/1.1
+
+GET https://week-4-personal.onrender.com/contacts 
+###
+GET https://week-4-personal.onrender.com/contacts/63f8d1973f6c6771fb5131b8
+###
+GET https://week-4-personal.onrender.com/contacts/63f8d3313f6c6771fb5131b9
+###
+GET https://week-4-personal.onrender.com/contacts/63f8d0193f6c6771fb5131b7
+
+
+// LOCALHOST
+### Get all contacts
+GET https://week-4-personal.onrender.com/contacts
+
+
+### Get contact by id
+GET https://week-4-personal.onrender.com/contacts/63f8d3313f6c6771fb5131b9
+
+
+
+### Create contact
+POST https://week-4-personal.onrender.com/contacts
+content-type: application/json
+
+{
+    "firstName":"Okue",
+    "lastName":"Agnou",
+    "email":"boto@yahoo.fr",
+    "favoriteColor":"yellow",
+    "birthday":"03/05/1995"
+}
+
+
+### PUT contact
+PUT https://week-4-personal.onrender.com/contacts/64136649a523234829f19924
+content-type: application/json
+
+{
+    "firstName":"Kadjo",
+    "lastName":"Bohneur",
+    "email":"kadjo@gmail.com.com",
+    "favoriteColor":"red",
+    "birthday":"02/06/1994"
+}
+### DELETE contact
+DELETE https://week-4-personal.onrender.com/contacts/63f8d0193f6c6771fb5131b7
+
